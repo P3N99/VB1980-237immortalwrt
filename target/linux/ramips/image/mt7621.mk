@@ -729,7 +729,7 @@ define Device/haier-sim
   IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
   IMAGE/firmware.bin := append-kernel | pad-to $$(KERNEL_SIZE) | append-ubi | \
 	  check-size
-  DEVICE_PACKAGES += luci-app-mtwifi uboot-envtools
+  DEVICE_PACKAGES += kmod-mt7915e
 endef
 
 define Device/haier_har-20s2u1
